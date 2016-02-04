@@ -126,8 +126,9 @@ function start() {
                 console.log("\n\n"+log._("runtime.vendorizedWelcome", {vendorName:settings.vendorName})+"\n===================\n");
                 log.info(log._("runtime.vendorVersion",{component:settings.vendorName,version:"v"+settings.vendorVersion}));
             }
-            else
+            else {
                 console.log("\n\n"+log._("runtime.welcome")+"\n===================\n");
+            }
             if (settings.version) {
                 log.info(log._("runtime.version",{component:"Node-RED",version:"v"+settings.version}));
             }

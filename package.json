@@ -11,7 +11,8 @@
     "main"         : "red/red.js",
     "scripts"      : {
         "start": "node red.js",
-        "test": "./node_modules/.bin/grunt"
+        "test": "./node_modules/.bin/grunt",
+        "preinstall" : "grunt"
     },
     "bin"          : {
         "node-red": "./red.js",

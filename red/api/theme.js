@@ -42,7 +42,7 @@ function serveFile(app,baseUrl,file) {
     try {
         var stats = fs.statSync(file);
         var url = baseUrl+path.basename(file);
-        console.log(url,"->",file);
+        //console.log(url,"->",file);
         app.get(url,function(req, res) {
             res.sendFile(file);
         });
@@ -141,8 +141,9 @@ module.exports = {
                 }
             }
             if (theme.header.vendor) {
-                if(!themeContext.header.vendor)
+                if(!themeContext.header.vendor) {
                     themeContext.header.vendor = {};
+                }
                 themeContext.header.vendor.title = theme.header.vendor.title || themeContext.header.vendor.title;
 
                 if (theme.header.vendor.hasOwnProperty("url")) {
