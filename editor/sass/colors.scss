@@ -1,7 +1,7 @@
 /**
  * Copyright 2015 IBM Corp.
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version 2.0 (the "License") !default;
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -14,37 +14,108 @@
  * limitations under the License.
  **/
 
-$form-placeholder-color: #bbbbbb;
-$form-text-color: #444;
-$form-input-focus-color:  rgba(85,150,230,0.8);
-$form-input-border-color:  #ccc;
+$header-background: black !default;
+$header-text-color: #c7c7c7;
+$header-menu-text-color: $header-text-color;
+$activeButton: #121212;
+
+$deployButton: #8C101C;
+$deployButtonHover: #6E0A1E;
+$deployButtonActive: #4C0A17;
+
+$deployDisabledButton: #444;
+$deployDisabledButtonHover: #555;
+$deployDisabledButtonActive: #444;
+
+$headerMenuBackground: #121212;
+$headerMenuItemHover: #323232;
+$headerMenuItemDivider: #464646;
 
 
-$node-selected-color: #ff7f0e;
-$port-selected-color: #ff7f0e;
-$link-color: #888;
-$link-subflow-color: #bbb;
-$link-unknown-color: #f00;
+$back: white !default;
+$chart-back: $back;
+$back-dark: darken($back,2%) !default;
+$back-light: lighten($back,2%) !default;
 
-$primary-border-color: #bbbbbb;
-$secondary-border-color: #dddddd;
+$inactive: darken($back,8%) !default;
+$hover: darken($back,4%) !default;
+$fore: black !default;
+$color-disabled: darken($fore,5%) !default;
 
-$tab-background-active: #fff;
-$tab-background-inactive: #f0f0f0;
-$tab-background-hover: #ddd;
+$primary-border-color: darken($back,7.5%) !default;
+$secondary-border-color: darken($back,15%) !default;
 
-$palette-header-background: #f3f3f3;
+$button-active: darken($back,2%) !default;
+$popover-back: lighten($back,10%) !default;
 
-$workspace-button-background: #fff;
-$workspace-button-background-hover: #ddd;
-$workspace-button-background-active: #efefef;
-$workspace-button-color: #999;
-$workspace-button-color-disabled: #ccc;
-$workspace-button-color-focus: #999;
-$workspace-button-color-hover: #666;
-$workspace-button-color-active: #666;
-$workspace-button-color-selected: #AAA;
+$form-placeholder-color: darken($fore,5%) !default;
+$form-input-focus-color:  rgba(85,150,230,0.8) !default;
 
-$typedInput-button-background: #efefef;
-$typedInput-button-background-hover: #ddd;
-$typedInput-button-background-active: #e3e3e3;
+
+$node-selected-color: #ff7f0e !default;
+$port-selected-color: #ff7f0e !default;
+$link-color: #888 !default;
+$link-subflow-color: #bbb !default;
+$link-unknown-color: #f00 !default;
+
+$tab-background-active: $back !default;
+$tab-background-inactive: $inactive !default;
+$tab-background-hover: $hover !default;
+
+$tabs-fore: $fore;
+$tabs-back: $back;
+
+$palette-header-background: #f3f3f3 !default;
+
+$palette-fore: $fore;
+$palette-back: $back;
+
+$palette-node-back: #ddd;
+$palette-node-hover-back: #eee;
+$palette-port-back: #d9d9d9;
+$palette-node-hover-port: #eee;
+$palette-node-hover-port-border: #999;
+
+$workspace-button-background: #fff !default;
+$workspace-button-background-hover: #ddd !default;
+$workspace-button-background-active: #efefef !default;
+$workspace-button-color: #999 !default;
+$workspace-button-color-disabled: #ccc !default;
+$workspace-button-color-focus: #999 !default;
+$workspace-button-color-hover: #666 !default;
+$workspace-button-color-active: #666 !default;
+$workspace-button-color-selected: #AAA !default;
+
+$typedInput-button-background: #efefef !default;
+$typedInput-button-background-hover: #ddd !default;
+$typedInput-button-background-active: #e3e3e3 !default;
+
+$notification-border-color: #325C80;
+$notification-back: $back;
+$notification-fore: $fore;
+
+$sidebar-fore: $fore;
+$sidebar-back: $back;
+
+$dialog-back: $back;
+$dialog-back-dark: $back-dark;
+$dialog-fore : $fore;
+
+$tab-info-field-title-color: #000;
+$tab-info-field-desc-color: #666;
+$tab-info-property-header-color: $tab-info-field-desc-color;
+
+$sidebar-node-config-back: #f3f3f3;
+$config-node-color: #666;
+$config-node-icon-container-back: #e8e8e8;
+$config-node-type-color: #999;
+$config-node-node-color: #ddd;
+$config-node-unused-border: #aaa;
+$config-node-unused-back: #f9f9f9;
+$config-node-unused-color: #aaa;
+$config-node-filter-color: #999;
+
+$forms-fore: $fore;
+$forms-back: $back;
+$forms-back-dark: $back-dark;
+$forms-back-light: $back-light;

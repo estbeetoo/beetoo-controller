@@ -59,7 +59,7 @@ function init(userSettings,_adminApi) {
 
 }
 
-var version;
+var version, vendorName, vendorVersion;
 
 function getVersion() {
     if (!version) {
@@ -73,6 +73,39 @@ function getVersion() {
         }
     }
     return version;
+}
+
+function getVendorVersion() {
+    if (vendorVersion===null) {
+        var parentJSON = path.join(__dirname,"..","..","..","package.json");
+        try {
+            fs.accessSync(parentJSON);
+            vendorVersion = require(parentJSON).version;
+            /* istanbul ignore else */
+            try {
+                fs.statSync(path.join(__dirname,"..","..","..",".git"));
+                vendorVersion += "-git";
+            } catch(err) {
+                // No git directory
+            }
+        }catch(e){
+            vendorVersion = '';
+        }
+    }
+    return vendorVersion;
+}
+
+function getVendorName() {
+    if (vendorName===null) {
+        var parentJSON = path.join(__dirname,"..","..","..","package.json");
+        try {
+            fs.accessSync(parentJSON);
+            vendorName = require(parentJSON).name;
+        }catch(e){
+            vendorName = '';
+        }
+    }
+    return vendorName;
 }
 
 function start() {
@@ -89,7 +122,12 @@ function start() {
                     reportMetrics();
                 }, settings.runtimeMetricInterval||15000);
             }
-            console.log("\n\n"+log._("runtime.welcome")+"\n===================\n");
+            if (settings.vendorVersion) {
+                console.log("\n\n"+log._("runtime.vendorizedWelcome", {vendorName:settings.vendorName})+"\n===================\n");
+                log.info(log._("runtime.vendorVersion",{component:settings.vendorName,version:"v"+settings.vendorVersion}));
+            }
+            else
+                console.log("\n\n"+log._("runtime.welcome")+"\n===================\n");
             if (settings.version) {
                 log.info(log._("runtime.version",{component:"Node-RED",version:"v"+settings.version}));
             }
@@ -180,6 +218,8 @@ var runtime = module.exports = {
     stop: stop,
 
     version: getVersion,
+    vendorVersion: getVendorVersion,
+    vendorName: getVendorName,
 
     log: log,
     i18n: i18n,

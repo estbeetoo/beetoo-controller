@@ -20,13 +20,13 @@
     right: 0px;
     bottom: 0px;
     width: 315px;
-    background: #fff;
+    background: $sidebar-back;
     box-sizing: border-box;
     @include component-border;
 }
 
 #sidebar.closing {
-    background: #eee;
+    background: $sidebar-back;
     border-color: #900;
     border-style: dashed;
 }
@@ -38,6 +38,7 @@
     bottom: 25px;
     left: 0px;
     overflow-y: auto;
+    background: $sidebar-content-back;
 }
 
 #sidebar-separator {
@@ -63,10 +64,10 @@
 }
 
 .sidebar-header {
-    color: #666;
+    color: $sidebar-fore;
     text-align: right;
     padding: 8px 10px;
-    background: #f3f3f3;
+    background: $back-dark;
     border-bottom: 1px solid $secondary-border-color;
 }
 

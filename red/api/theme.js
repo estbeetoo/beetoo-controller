@@ -42,7 +42,7 @@ function serveFile(app,baseUrl,file) {
     try {
         var stats = fs.statSync(file);
         var url = baseUrl+path.basename(file);
-        //console.log(url,"->",file);
+        console.log(url,"->",file);
         app.get(url,function(req, res) {
             res.sendFile(file);
         });
@@ -94,11 +94,35 @@ module.exports = {
                     themeContext.page.favicon = url;
                 }
             }
+            if (theme.page.favicon16) {
+                url = serveFile(themeApp,"/favicon/",theme.page.favicon16)
+                if (url) {
+                    themeContext.page.favicon16 = url;
+                }
+            }
+            if (theme.page.favicon32) {
+                url = serveFile(themeApp,"/favicon/",theme.page.favicon32)
+                if (url) {
+                    themeContext.page.favicon32 = url;
+                }
+            }
+            if (theme.page.favicon64) {
+                url = serveFile(themeApp,"/favicon/",theme.page.favicon64)
+                if (url) {
+                    themeContext.page.favicon64 = url;
+                }
+            }
+            if (theme.page.favicon196) {
+                url = serveFile(themeApp,"/favicon/",theme.page.favicon196)
+                if (url) {
+                    themeContext.page.favicon196 = url;
+                }
+            }
 
             themeContext.page.title = theme.page.title || themeContext.page.title;
         }
 
-        if (theme.header) {
+        if (theme.header.vendor) {
 
             themeContext.header.title = theme.header.title || themeContext.header.title;
 
@@ -114,6 +138,26 @@ module.exports = {
                     }
                 } else {
                     themeContext.header.image = null;
+                }
+            }
+            if (theme.header.vendor) {
+                if(!themeContext.header.vendor)
+                    themeContext.header.vendor = {};
+                themeContext.header.vendor.title = theme.header.vendor.title || themeContext.header.vendor.title;
+
+                if (theme.header.vendor.hasOwnProperty("url")) {
+                    themeContext.header.vendor.url = theme.header.vendor.url;
+                }
+
+                if (theme.header.vendor.hasOwnProperty("image")) {
+                    if (theme.header.vendor.image) {
+                        url = serveFile(themeApp,"/header.vendor/",theme.header.vendor.image);
+                        if (url) {
+                            themeContext.header.vendor.image = url;
+                        }
+                    } else {
+                        themeContext.header.vendor.image = null;
+                    }
                 }
             }
         }

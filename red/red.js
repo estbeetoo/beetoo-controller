@@ -85,6 +85,8 @@ module.exports = {
     settings:runtime.settings,
     util: runtime.util,
     version: runtime.version,
+    vendorName: runtime.vendorName,
+    vendorVersion: runtime.vendorVersion,
 
     comms: api.comms,
     library: api.library,

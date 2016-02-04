@@ -25,6 +25,8 @@ module.exports = {
         var safeSettings = {
             httpNodeRoot: settings.httpNodeRoot,
             version: settings.version,
+            vendorVersion: settings.vendorVersion,
+            vendorName: settings.vendorName,
             user: req.user
         }
 

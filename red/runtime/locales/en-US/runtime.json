@@ -1,7 +1,9 @@
 {
     "runtime": {
+        "vendorizedWelcome": "Welcome to __vendorName__ powered by Node-RED",
         "welcome": "Welcome to Node-RED",
         "version": "__component__ version: __version__",
+        "vendorVersion": "__component__ version: __version__",
         "paths": {
             "settings": "Settings file  : __path__"
         }

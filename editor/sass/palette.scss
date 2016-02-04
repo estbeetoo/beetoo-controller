@@ -16,16 +16,16 @@
 
 
 #palette {
+    color: $palette-fore;
     position: absolute;
     top: 0px;
     bottom: 0px;
     left:0px;
-    background: #f3f3f3;
+    background: $palette-back;
     width: 180px;
     text-align: center;
     @include disable-selection;
     @include component-border;
-
 }
 .palette-scroll {
     display: none;
@@ -48,27 +48,45 @@
     left:0;
     right:0;
     overflow: hidden;
-    background: #ffffff;
+    background: $palette-back;
     text-align: center;
     height: 35px;
     padding: 3px;
     border-bottom: 1px solid $primary-border-color;
     box-sizing:border-box;
-}
-#palette-search i {
-    font-size: 10px;
-    color: #666;
-}
-#palette-search i.fa-search {
-    position: absolute;
-    pointer-events: none;
-    left: 12px;
-    top: 12px;
-}
-#palette-search i.fa-times {
-    position: absolute;
-    right: 7px;
-    top: 12px;
+    i {
+        font-size: 10px;
+        color: $palette-fore;
+        &.fa-search {
+            position: absolute;
+            pointer-events: none;
+            left: 12px;
+            top: 12px;
+        }
+        &.fa-times {
+            position: absolute;
+            right: 7px;
+            top: 12px;
+        }
+    }
+    input {
+        background: $palette-back;
+        color: $palette-fore;
+        border-radius: 0;
+        border: none;
+        width: 100%;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding: 3px 17px 3px 22px;
+        margin: 0px;
+        height: 30px;
+        box-sizing:border-box;
+        &:focus {
+            border: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+    }
 }
 
 #palette-search-clear {
@@ -80,23 +98,7 @@
     display: none;
 }
 
-#palette-search input {
-    border-radius: 0;
-    border: none;
-    width: 100%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    padding: 3px 17px 3px 22px;
-    margin: 0px;
-    height: 30px;
-    box-sizing:border-box;
-}
 
-#palette-search input:focus {
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
 #palette-footer {
     @include component-footer;
 }
@@ -106,16 +108,16 @@
 
 
 .palette-category {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $primary-border-color;
 }
 .palette-content {
-    background: #fff;
+    background: $palette-back;
     padding: 3px;
 }
 
 .palette-header {
     position: relative;
-    background: $palette-header-background;
+    background: $palette-back;
     cursor: pointer;
     text-align: left;
     padding: 9px;
@@ -155,7 +157,7 @@
 
 .palette_node {
     cursor:move;
-    background: #ddd;
+    background: $palette-node-back;
     margin: 10px auto;
     height: 25px;
     border-radius: 5px;
@@ -168,7 +170,7 @@
 }
 .palette_node:hover {
     border-color: $node-selected-color;
-    background-color: #eee;
+    background-color: $palette-node-hover-back;
 }
 .palette_port {
     position: absolute;
@@ -176,7 +178,7 @@
     left: -5px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background:#d9d9d9;
+    background: $palette-port-back;
     border-radius: 3px;
     width: 10px;
     height: 10px;
@@ -188,8 +190,8 @@
 }
 
 .palette_node:hover .palette_port {
-    border-color: #999;
-    background-color: #eee;
+    border-color: $palette-node-hover-port-border;
+    background-color: $palette-node-hover-port;
 }
 .palette_icon_container {
     position: absolute;

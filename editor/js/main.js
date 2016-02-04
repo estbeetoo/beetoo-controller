@@ -190,7 +190,8 @@ var RED = (function() {
                     label: RED.settings.theme("menu.menu-item-help.label","Node-RED Website"),
                     href: RED.settings.theme("menu.menu-item-help.url","http://nodered.org/docs")
                 },
-                {id:"menu-item-node-red-version", label:"v"+RED.settings.version}
+                {id:"menu-item-node-red-version", label:(RED.settings.vendorName ? "Node-RED ": "")+"v"+RED.settings.version},
+                (RED.settings.vendorVersion ? {id:"menu-item-node-red-vendor-version", label:RED.settings.vendorName+" v"+RED.settings.vendorVersion}: null)
             ]
         });
 

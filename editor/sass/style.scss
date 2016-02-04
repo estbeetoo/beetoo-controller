@@ -13,9 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
-
+@import "globals";
 @import "colors";
 @import "mixins";
+
+@import "theme";
 
 @import "forms";
 
@@ -47,17 +49,17 @@
 
 @import "keyboard";
 
-
 body {
     font-size: 14px;
-    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: $font-family;
     padding-top: 100px;
-    background: #f3f3f3;
+    background: $back;
+    color: $fore;
 }
 
 #main-container {
     position: absolute;
-    top:40px; left:0; bottom: 0; right:0;
+    top:$header-height; left:0; bottom: 0; right:0;
     overflow:hidden;
 }
 

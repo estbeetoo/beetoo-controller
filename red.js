@@ -50,6 +50,7 @@ nopt.invalidHandler = function(k,v,t) {
 var parsedArgs = nopt(knownOpts,shortHands,process.argv,2)
 
 if (parsedArgs.help) {
+    RED.vendorVersion && RED.vendorVersion() && console.log(RED.vendorName()+" v"+RED.vendorVersion());
     console.log("Node-RED v"+RED.version());
     console.log("Usage: node-red [-v] [-?] [--settings settings.js] [--userDir DIR] [flows.json]");
     console.log("");
