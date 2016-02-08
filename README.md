@@ -1,4 +1,10 @@
-# Node-RED
+# BeeToo Controller
+
+Slightly modified Node-RED. Mostly the UI part.
+
+![BeToo Controller: A visual tool for programming professional automation projects](http://beetoo.me/images/beetoo_controller_iface_demo.png)
+
+# What is Node-RED?
 
 http://nodered.org
 
@@ -14,8 +20,8 @@ A visual tool for wiring the Internet of Things.
 Check out http://nodered.org/docs/getting-started/ for full instructions on getting
 started.
 
-1. `sudo npm install -g node-red`
-2. `node-red`
+1. `sudo npm install -g beetoo-controller`
+2. `beetoo-controller`
 3. Open <http://localhost:1880>
 
 ## Getting Help
@@ -35,8 +41,8 @@ If you want to run the latest code from git, here's how to get started:
 
 2. Clone the code:
 
-        git clone https://github.com/node-red/node-red.git
-        cd node-red
+        git clone https://github.com/estbeetoo/beetoo-controller.git
+        cd beetoo-controller
 
 3. Install the node-red dependencies
 
@@ -48,7 +54,7 @@ If you want to run the latest code from git, here's how to get started:
 
 5. Run
 
-        node red.js
+        node beetoo-controller.js
 
 ## Contributing
 

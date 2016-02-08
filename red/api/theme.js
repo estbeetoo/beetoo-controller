@@ -22,15 +22,23 @@ var clone = require("clone");
 
 var defaultContext = {
     page: {
-        title: "Node-RED",
-        favicon: "favicon.ico"
+        title: "BeeToo.Controller",
+        favicon: "favicon.ico",
+        favicon16: "red/images/favicon-16x16.png",
+        favicon32: "red/images/favicon-32x32.png",
+        favicon64: "red/images/favicon-64x64.png",
+        favicon196: "red/images/favicon-196x196.png"
     },
-    header: {
-        title: "Node-RED",
-        image: "red/images/node-red.png"
+    header : {
+        title: "powered by Node-RED",
+        image: "red/images/node-red.png",
+        vendor: {
+            image: "red/images/beetoo_logo_controller.png",
+            url:"http://beetoo.me"
+        }
     },
     asset: {
-        red: (process.env.NODE_ENV == "development")? "red/red.js":"red/red.min.js"
+        red: (process.env.NODE_ENV == "development") ? "red/red.js" : "red/red.min.js"
     }
 };
 
@@ -38,23 +46,23 @@ var theme = null;
 var themeContext = clone(defaultContext);
 var themeSettings = null;
 
-function serveFile(app,baseUrl,file) {
+function serveFile(app, baseUrl, file) {
     try {
         var stats = fs.statSync(file);
-        var url = baseUrl+path.basename(file);
+        var url = baseUrl + path.basename(file);
         //console.log(url,"->",file);
-        app.get(url,function(req, res) {
+        app.get(url, function (req, res) {
             res.sendFile(file);
         });
-        return "theme"+url;
-    } catch(err) {
+        return "theme" + url;
+    } catch (err) {
         //TODO: log filenotfound
         return null;
     }
 }
 
 module.exports = {
-    init: function(runtime) {
+    init: function (runtime) {
         var settings = runtime.settings;
         themeContext = clone(defaultContext);
         if (runtime.version) {
@@ -65,7 +73,7 @@ module.exports = {
 
     },
 
-    app: function() {
+    app: function () {
         var i;
         var url;
         themeSettings = {};
@@ -80,8 +88,8 @@ module.exports = {
                 }
                 themeContext.page.css = [];
 
-                for (i=0;i<styles.length;i++) {
-                    url = serveFile(themeApp,"/css/",styles[i]);
+                for (i = 0; i < styles.length; i++) {
+                    url = serveFile(themeApp, "/css/", styles[i]);
                     if (url) {
                         themeContext.page.css.push(url);
                     }
@@ -89,33 +97,48 @@ module.exports = {
             }
 
             if (theme.page.favicon) {
-                url = serveFile(themeApp,"/favicon/",theme.page.favicon)
+                url = serveFile(themeApp, "/favicon/", theme.page.favicon)
                 if (url) {
                     themeContext.page.favicon = url;
                 }
+                else if(theme.page.favicon.indexOf('red/')===0) {
+                    themeContext.page.favicon = theme.page.favicon;
+                }
             }
             if (theme.page.favicon16) {
-                url = serveFile(themeApp,"/favicon/",theme.page.favicon16)
+                url = serveFile(themeApp, "/favicon/", theme.page.favicon16)
                 if (url) {
                     themeContext.page.favicon16 = url;
                 }
+                else if(theme.page.favicon16.indexOf('red/')===0) {
+                    themeContext.page.favicon16 = theme.page.favicon16;
+                }
             }
             if (theme.page.favicon32) {
-                url = serveFile(themeApp,"/favicon/",theme.page.favicon32)
+                url = serveFile(themeApp, "/favicon/", theme.page.favicon32)
                 if (url) {
                     themeContext.page.favicon32 = url;
                 }
+                else if(theme.page.favicon32.indexOf('red/')===0) {
+                    themeContext.page.favicon32 = theme.page.favicon32;
+                }
             }
             if (theme.page.favicon64) {
-                url = serveFile(themeApp,"/favicon/",theme.page.favicon64)
+                url = serveFile(themeApp, "/favicon/", theme.page.favicon64)
                 if (url) {
                     themeContext.page.favicon64 = url;
                 }
+                else if(theme.page.favicon64.indexOf('red/')===0) {
+                    themeContext.page.favicon64 = theme.page.favicon64;
+                }
             }
             if (theme.page.favicon196) {
-                url = serveFile(themeApp,"/favicon/",theme.page.favicon196)
+                url = serveFile(themeApp, "/favicon/", theme.page.favicon196)
                 if (url) {
                     themeContext.page.favicon196 = url;
+                }
+                else if(theme.page.favicon196.indexOf('red/')===0) {
+                    themeContext.page.favicon196 = theme.page.favicon196;
                 }
             }
 
@@ -132,7 +155,7 @@ module.exports = {
 
             if (theme.header.hasOwnProperty("image")) {
                 if (theme.header.image) {
-                    url = serveFile(themeApp,"/header/",theme.header.image);
+                    url = serveFile(themeApp, "/header/", theme.header.image);
                     if (url) {
                         themeContext.header.image = url;
                     }
@@ -141,7 +164,7 @@ module.exports = {
                 }
             }
             if (theme.header.vendor) {
-                if(!themeContext.header.vendor) {
+                if (!themeContext.header.vendor) {
                     themeContext.header.vendor = {};
                 }
                 themeContext.header.vendor.title = theme.header.vendor.title || themeContext.header.vendor.title;
@@ -152,12 +175,19 @@ module.exports = {
 
                 if (theme.header.vendor.hasOwnProperty("image")) {
                     if (theme.header.vendor.image) {
-                        url = serveFile(themeApp,"/header.vendor/",theme.header.vendor.image);
+                        url = serveFile(themeApp, "/header.vendor/", theme.header.vendor.image);
                         if (url) {
                             themeContext.header.vendor.image = url;
+                        } else if(theme.header.vendor.image.indexOf('red/')===0) {
+                            themeContext.header.vendor.image = theme.header.vendor.image;
                         }
                     } else {
                         themeContext.header.vendor.image = null;
+                    }
+                }
+                if (theme.header.vendor.hasOwnProperty("title")) {
+                    if (theme.header.vendor.title) {
+                        themeContext.header.vendor.title = theme.header.vendor.title;
                     }
                 }
             }
@@ -172,7 +202,7 @@ module.exports = {
                     themeSettings.deployButton.label = theme.deployButton.label;
                 }
                 if (theme.deployButton.icon) {
-                    url = serveFile(themeApp,"/deploy/",theme.deployButton.icon);
+                    url = serveFile(themeApp, "/deploy/", theme.deployButton.icon);
                     if (url) {
                         themeSettings.deployButton.icon = url;
                     }
@@ -186,7 +216,7 @@ module.exports = {
 
         if (theme.login) {
             if (theme.login.image) {
-                url = serveFile(themeApp,"/login/",theme.login.image);
+                url = serveFile(themeApp, "/login/", theme.login.image);
                 if (url) {
                     themeContext.login = {
                         image: url
@@ -201,10 +231,10 @@ module.exports = {
 
         return themeApp;
     },
-    context: function() {
+    context: function () {
         return themeContext;
     },
-    settings: function() {
+    settings: function () {
         return themeSettings;
     }
 }

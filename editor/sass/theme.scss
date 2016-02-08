@@ -1,8 +1,11 @@
+$purple: #3e4191;
+$skyblue: #c7eaf9;
+$blue: #3ec7f4;
 $chart-back: transparent;
 $header-height: 60px;
 
-$header-background: #3e4191;
-$header-text-color: #6ccaf4;
+$header-background: $purple;
+$header-text-color: $blue;
 $header-menu-text-color: white;
 $activeButton: #121212;
 
@@ -19,25 +22,24 @@ $headerMenuItemHover: lighten($headerMenuBackground, 10%);
 $headerMenuItemDivider: lighten($headerMenuItemHover, 10%);
 
 //$back: #6ccaf4;
-$alternative-back: #a5d3e9;
-$back : transparent;
+$alternative-back: $skyblue;
+$back: transparent;
 $back-dark: transparent;
 $back-light: transparent;
 
-$inactive: darken($alternative-back,16%);
-$hover: darken($alternative-back,8%);
-$fore: white;
-$color-disabled: darken($fore,10%);
+$inactive: darken($alternative-back, 20%);
+$hover: darken($alternative-back, 10%);
+$fore: black;
+$color-disabled: darken($fore, 20%);
 
-$primary-border-color: darken($alternative-back,12%);
-$secondary-border-color: darken($alternative-back,24%);
+$primary-border-color: darken($alternative-back, 20%);
+$secondary-border-color: darken($alternative-back, 40%);
 
-$button-active: darken($alternative-back,2%);
-$popover-back: lighten($alternative-back,10%);
+$button-active: darken($alternative-back, 2%);
+$popover-back: lighten($alternative-back, 10%);
 
-$form-placeholder-color: darken($fore,10%);
-$form-input-focus-color:  rgba(85,150,230,0.8);
-
+$form-placeholder-color: lighten($fore, 70%);
+$form-input-focus-color: rgba(85, 150, 230, 0.8);
 
 $node-selected-color: #ff7f0e;
 $port-selected-color: #ff7f0e;
@@ -45,7 +47,7 @@ $link-color: #888;
 $link-subflow-color: #bbb;
 $link-unknown-color: #f00;
 
-$tab-background-active: $alternative-back;
+$tab-background-active: $skyblue;
 $tab-background-inactive: $inactive;
 $tab-background-hover: $hover;
 
@@ -53,8 +55,11 @@ $tabs-fore: white;
 $tabs-back: transparent;
 
 $palette-fore: #3a3a3a;
-$palette-back: transparent;
+$palette-content-back: $alternative-back;
+$palette-back: darken($palette-content-back, 20%);
 $palette-header-background: transparent;
+$palette-search-back: $alternative-back;
+$palette-search-input-back: transparent;
 
 $workspace-button-background: #fff;
 $workspace-button-background-hover: #ddd;
@@ -81,13 +86,15 @@ $dialog-back: white;
 $dialog-back-dark: darken(white, 2%);
 $dialog-fore: #666;
 
-$sidebar-fore: white;
+$sidebar-fore: black;
 $sidebar-back: transparent;
-$sidebar-content-back: transparentize(black, 0.4);
+$sidebar-content-back: transparent;
 
-$tab-info-field-title-color: skyblue;
-$tab-info-field-desc-color: white;
+$tab-info-field-title-color: $purple;
+$tab-info-field-desc-color: black;
 $tab-info-property-header-color: $tab-info-field-desc-color;
+
+$node-info-table-border: $purple;
 
 $sidebar-node-config-back: transparent;
 $config-node-type-color: skyblue;

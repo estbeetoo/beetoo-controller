@@ -77,7 +77,21 @@
         <li><a id="btn-sidemenu" class="button" data-toggle="dropdown" href="#"><i class="fa fa-bars"></i></a></li>
     </ul>
     {{#header.vendor}}
-    <span class="logo vendor">{{#header.vendor.url}}<a href="{{.}}">{{/header.vendor.url}}{{#header.vendor.image}}<img src="{{.}}" title="{{vendorVersion}}">{{/header.vendor.image}} <span>{{ header.vendor.title }}</span>{{#header.vendor.url}}</a>{{/header.vendor.url}}</span>
+    <span class="logo vendor">
+        {{#header.vendor.url}}
+            <a href="{{.}}">
+        {{/header.vendor.url}}
+        {{#header.vendor.image}}
+            <img src="{{.}}" title="{{vendorVersion}}">
+        {{/header.vendor.image}}
+        <span>
+            {{#header.vendor.title}}{{.}}{{/header.vendor.title}}
+            {{^header.vendor.title}}{{vendorName}}{{/header.vendor.title}}
+        </span>
+        {{#header.vendor.url}}
+            </a>
+        {{/header.vendor.url}}
+    </span>
     {{/header.vendor}}
     <span class="logo {{#header.vendor}}with-vendor{{/header.vendor}}">{{#header.url}}<a href="{{.}}">{{/header.url}}{{#header.image}}<img src="{{.}}" title="{{version}}">{{/header.image}} <span>{{ header.title }}</span>{{#header.url}}</a>{{/header.url}}</span>
 </div>

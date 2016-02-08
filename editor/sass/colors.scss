@@ -68,7 +68,10 @@ $tabs-back: $back;
 $palette-header-background: #f3f3f3 !default;
 
 $palette-fore: $fore;
-$palette-back: $back;
+$palette-content-back: $back;
+$palette-back: darken($palette-content-back, 10%);
+$palette-search-back: darken($palette-content-back, 10%);
+$palette-search-input-back: $palette-search-back;
 
 $palette-node-back: #ddd;
 $palette-node-hover-back: #eee;
@@ -104,6 +107,8 @@ $dialog-fore : $fore;
 $tab-info-field-title-color: #000;
 $tab-info-field-desc-color: #666;
 $tab-info-property-header-color: $tab-info-field-desc-color;
+
+$node-info-table-border: #ddd;
 
 $sidebar-node-config-back: #f3f3f3;
 $config-node-color: #666;

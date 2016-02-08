@@ -1,7 +1,7 @@
 {
     "name"         : "beetoo-controller",
-    "version"      : "0.1.0",
-    "description"  : "A visual tool for wiring the Internet of Things",
+    "version"      : "0.1.5",
+    "description"  : "A visual tool for programming professional automation projects",
     "homepage"     : "http://nodered.org",
     "license"      : "Apache-2.0",
     "repository"   : {
@@ -10,12 +10,13 @@
     },
     "main"         : "red/red.js",
     "scripts"      : {
-        "start": "node red.js",
-        "test": "./node_modules/.bin/grunt"
+        "start": "node beetoo-controller.js",
+        "test": "./node_modules/.bin/grunt",
+        "prepublish": "./node_modules/.bin/grunt build"
     },
     "bin"          : {
-        "node-red": "./red.js",
-        "node-red-pi": "bin/node-red-pi"
+        "beetoo-controller": "./beetoo-controller.js",
+        "beetoo-controller-pi": "bin/beetoo-controller-pi"
     },
     "contributors": [
         {"name": "Nick O'Leary"},

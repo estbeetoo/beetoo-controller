@@ -23,7 +23,7 @@ table.node-info {
     width: 97%;
 }
 table.node-info tr {
-    border: 1px solid #ddd;
+    border: 1px solid $node-info-table-border;
 }
 table.node-info tr.blank {
     border: none;
@@ -39,7 +39,7 @@ table.node-info td:first-child{
     vertical-align: top;
     width: 90px;
     padding: 3px;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid $node-info-table-border;
 }
 table.node-info td:last-child{
     padding-left: 5px;
