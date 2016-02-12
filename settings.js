@@ -177,5 +177,7 @@ module.exports = {
             // Whether or not to include audit events in the log output
             audit: false
         }
-    }
+    },
+    vendorName: 'BeeToo.Controller',
+    vendorVersion: '0.1.6'
 }
