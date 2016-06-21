@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e239f0-71da-40d1-8d1c-7deeb7ee02dc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/beetoo-controller.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/beetoo_controller_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.nodemonignore" afterPath="$PROJECT_DIR$/.nodemonignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.npmignore" afterPath="$PROJECT_DIR$/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editor/images/beetoo-logo-256.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editor/js/user.js" afterPath="$PROJECT_DIR$/editor/js/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="beetoo-controller.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/red/runtime/settings.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/red/api/auth/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+            <state vertical-scroll-proportion="-3.4366198">
+              <caret line="99" column="20" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -57,10 +39,24 @@
       <file leaf-file-name="theme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/red/api/theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+            <state vertical-scroll-proportion="-3.4366198">
+              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beetoo_logo_controller.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/images/beetoo_logo_controller.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beetoo_logo_controller.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/red/images/beetoo_logo_controller.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -74,21 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".npmignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".npmignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19130434">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="5" />
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -104,31 +90,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editor/sass/header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editor/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="149" selection-start-line="51" selection-start-column="149" selection-end-line="51" selection-end-column="149" />
+            <state vertical-scroll-proportion="-3.9859154">
+              <caret line="51" column="124" selection-start-line="51" selection-start-column="124" selection-end-line="51" selection-end-column="143" />
               <folding>
-                <marker date="1466517783240" expanded="true" signature="859:956" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="1045:1145" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="1241:1260" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="2516:2527" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="3414:3450" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="3495:3523" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="3612:3646" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="3770:3789" placeholder="..." />
-                <marker date="1466517783240" expanded="true" signature="3938:3950" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="859:956" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="1045:1145" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="1241:1260" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="2510:2521" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="3408:3444" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="3489:3517" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="3606:3640" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="3764:3783" placeholder="..." />
+                <marker date="1466531574276" expanded="true" signature="3932:3944" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -138,39 +114,49 @@
         <entry file="file://$PROJECT_DIR$/public/red/red.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="528" column="149" selection-start-line="528" selection-start-column="149" selection-end-line="528" selection-end-column="149" />
+              <caret line="528" column="143" selection-start-line="528" selection-start-column="143" selection-end-line="528" selection-end-column="143" />
               <folding>
-                <marker date="1466528776587" expanded="true" signature="18255:18352" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="18441:18541" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="18637:18656" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="19912:19923" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="20810:20846" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="20891:20919" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="21008:21042" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="21166:21185" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="21334:21346" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="87005:87090" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="87145:87164" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="87272:87287" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="96904:96926" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="105326:105417" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="106581:106672" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="248966:248998" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="249526:249558" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="285190:285201" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="294431:294445" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="321881:321908" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="322020:322167" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="322426:322573" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="333088:333105" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="346322:346738" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="346645:346659" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="357308:357325" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="357389:357411" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="357675:357692" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="357771:357793" placeholder="..." />
-                <marker date="1466528776587" expanded="true" signature="381117:381137" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="18255:18352" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="18441:18541" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="18637:18656" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="19906:19917" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="20804:20840" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="20885:20913" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="21002:21036" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="21160:21179" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="21328:21340" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="86999:87084" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="87139:87158" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="87266:87281" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="96898:96920" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="105320:105411" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="106575:106666" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="248960:248992" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="249520:249552" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="285184:285195" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="294425:294439" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="321875:321902" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="322014:322161" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="322420:322567" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="333082:333099" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="346316:346732" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="346639:346653" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="357302:357319" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="357383:357405" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="357669:357686" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="357765:357787" placeholder="..." />
+                <marker date="1466531630407" expanded="true" signature="381111:381131" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.056921087">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,12 +175,13 @@
         <option value="$PROJECT_DIR$/editor/sass/colors.scss" />
         <option value="$PROJECT_DIR$/editor/js/ui/view.js" />
         <option value="$PROJECT_DIR$/editor/sass/header.scss" />
-        <option value="$PROJECT_DIR$/public/red/red.js" />
-        <option value="$PROJECT_DIR$/editor/js/user.js" />
         <option value="$PROJECT_DIR$/red/api/theme.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.nodemonignore" />
         <option value="$PROJECT_DIR$/.npmignore" />
+        <option value="$PROJECT_DIR$/editor/js/user.js" />
+        <option value="$PROJECT_DIR$/public/red/red.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -258,6 +245,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beetoo-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beetoo-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beetoo-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beetoo-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -285,6 +304,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1304" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="editorconfig.notification" value="spaces" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -364,7 +384,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466517748412</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".idea dir ignored out">
+      <created>1466531462725</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1466531462725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -372,20 +398,20 @@
     <editor active="false" />
     <layout>
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23416199" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18559557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287891" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23477565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -425,23 +451,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login page vendorized too." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login page vendorized too." />
+    <MESSAGE value=".idea dir ignored out" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea dir ignored out" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/editor/js/ui/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="197" column="11" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
-          <folding>
-            <marker date="1466512530889" expanded="true" signature="91497:91514" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editor/sass/theme.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -491,13 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8039215">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -718,11 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editor/images/beetoo_logo_controller.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/red/runtime/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -731,83 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/red/api/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/editor/sass/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/red/red.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="528" column="149" selection-start-line="528" selection-start-column="149" selection-end-line="528" selection-end-column="149" />
-          <folding>
-            <marker date="1466528776587" expanded="true" signature="18255:18352" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="18441:18541" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="18637:18656" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="19912:19923" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="20810:20846" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="20891:20919" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="21008:21042" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="21166:21185" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="21334:21346" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="87005:87090" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="87145:87164" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="87272:87287" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="96904:96926" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="105326:105417" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="106581:106672" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="248966:248998" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="249526:249558" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="285190:285201" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="294431:294445" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="321881:321908" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="322020:322167" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="322426:322573" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="333088:333105" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="346322:346738" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="346645:346659" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="357308:357325" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="357389:357411" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="357675:357692" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="357771:357793" placeholder="..." />
-            <marker date="1466528776587" expanded="true" signature="381117:381137" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/js/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="149" selection-start-line="51" selection-start-column="149" selection-end-line="51" selection-end-column="149" />
-          <folding>
-            <marker date="1466517783240" expanded="true" signature="859:956" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="1045:1145" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="1241:1260" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="2516:2527" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="3414:3450" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="3495:3523" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="3612:3646" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="3770:3789" placeholder="..." />
-            <marker date="1466517783240" expanded="true" signature="3938:3950" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/red/api/theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -838,8 +770,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19130434">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/red/images/beetoo_logo_controller.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/images/beetoo_logo_controller.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/red/api/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4366198">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/red/api/auth/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4366198">
+          <caret line="99" column="20" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9859154">
+          <caret line="51" column="124" selection-start-line="51" selection-start-column="124" selection-end-line="51" selection-end-column="143" />
+          <folding>
+            <marker date="1466531574276" expanded="true" signature="859:956" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="1045:1145" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="1241:1260" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="2510:2521" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="3408:3444" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="3489:3517" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="3606:3640" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="3764:3783" placeholder="..." />
+            <marker date="1466531574276" expanded="true" signature="3932:3944" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/red/red.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="528" column="143" selection-start-line="528" selection-start-column="143" selection-end-line="528" selection-end-column="143" />
+          <folding>
+            <marker date="1466531630407" expanded="true" signature="18255:18352" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="18441:18541" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="18637:18656" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="19906:19917" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="20804:20840" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="20885:20913" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="21002:21036" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="21160:21179" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="21328:21340" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="86999:87084" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="87139:87158" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="87266:87281" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="96898:96920" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="105320:105411" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="106575:106666" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="248960:248992" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="249520:249552" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="285184:285195" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="294425:294439" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="321875:321902" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="322014:322161" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="322420:322567" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="333082:333099" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="346316:346732" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="346639:346653" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="357302:357319" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="357383:357405" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="357669:357686" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="357765:357787" placeholder="..." />
+            <marker date="1466531630407" expanded="true" signature="381111:381131" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056921087">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>

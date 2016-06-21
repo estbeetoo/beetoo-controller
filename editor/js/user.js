@@ -49,7 +49,7 @@ RED.user = (function() {
                     if (data.image) {
                         $("#node-dialog-login-image").attr("src",data.image);
                     } else {
-                        $("#node-dialog-login-image").attr("src",RED.settings.theme("menu.menu-item-help.label","red/images/beetoo-controller-256.png"));
+                        $("#node-dialog-login-image").attr("src",RED.settings.theme("menu.menu-item-help.label","red/images/beetoo-logo-256.png"));
                     }
                     for (;i<data.prompts.length;i++) {
                         var field = data.prompts[i];
