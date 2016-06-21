@@ -145,7 +145,7 @@ module.exports = {
             themeContext.page.title = theme.page.title || themeContext.page.title;
         }
 
-        if (theme.header.vendor) {
+        if (theme.header && theme.header.vendor) {
 
             themeContext.header.title = theme.header.title || themeContext.header.title;
 
@@ -183,6 +183,18 @@ module.exports = {
                         }
                     } else {
                         themeContext.header.vendor.image = null;
+                    }
+                }
+                if (theme.header.vendor.hasOwnProperty("login_image")) {
+                    if (theme.header.vendor.login_image) {
+                        url = serveFile(themeApp, "/header.vendor/", theme.header.vendor.login_image);
+                        if (url) {
+                            themeContext.header.vendor.login_image = url;
+                        } else if(theme.header.vendor.login_image.indexOf('red/')===0) {
+                            themeContext.header.vendor.login_image = theme.header.vendor.login_image;
+                        }
+                    } else {
+                        themeContext.header.vendor.login_image = null;
                     }
                 }
                 if (theme.header.vendor.hasOwnProperty("title")) {
