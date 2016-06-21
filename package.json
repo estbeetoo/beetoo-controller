@@ -1,6 +1,6 @@
 {
     "name"         : "beetoo-controller",
-    "version"      : "0.1.7",
+    "version"      : "0.1.8",
     "description"  : "A visual tool for programming professional automation projects",
     "homepage"     : "http://nodered.org",
     "license"      : "Apache-2.0",
